@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BookmarksActivity"
+    tools:context=".BookmarksActivity">
+
+    <ListView
+        android:id="@+id/bookmarks_list_view"
+        style="@style/NewsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/empty_state_view"
+        style="@style/EmptyState"
+        layout="@layout/empty_state" />
+
+</RelativeLayout>

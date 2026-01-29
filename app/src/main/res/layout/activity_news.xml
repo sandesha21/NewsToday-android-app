@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsActivity"
+    tools:context=".NewsActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/news_items_view"
+            style="@style/NewsList" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/empty_state_view"
+        style="@style/EmptyState"
+        layout="@layout/empty_state" />
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@style/LoadingIndicator" />
+
+</RelativeLayout>
