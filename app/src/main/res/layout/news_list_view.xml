@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsItem">
+
+    <ImageView
+        android:id="@+id/news_thumbnail_iv"
+        style="@style/NewsThumbnail"
+        android:src="@drawable/ic_placeholder" />
+
+    <LinearLayout
+        android:id="@+id/news_bottom_bar"
+        style="@style/NewsBottomContainer">
+
+        <ImageButton
+            android:id="@+id/bookmark_img_btn"
+            style="@style/NewsButton"
+            app:srcCompat="@drawable/btn_bookmark" />
+
+        <ImageButton
+            android:id="@+id/share_img_btn"
+            style="@style/NewsButton"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/author_and_date_tv"
+            style="@style/NewsAuthorAndDate"
+            tools:text="@string/placeholder_author_date" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/article_type_name_tv"
+        style="@style/NewsArticleType"
+        tools:text="@string/placeholder_article_type" />
+
+    <TextView
+        android:id="@+id/news_headline_tv"
+        style="@style/NewsHeadline"
+        tools:text="@string/placeholder_headline" />
+
+</RelativeLayout>
