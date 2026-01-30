@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.ListPreference
+        android:key="@string/settings_article_type_key"
+        android:title="@string/settings_article_type_title"
+        android:entries="@array/settings_article_type_labels"
+        android:entryValues="@array/settings_article_type_values"
+        android:defaultValue="@string/settings_article_type_default"
+        android:summary="%s" />
+
+    <androidx.preference.EditTextPreference
+        android:key="@string/settings_number_of_articles_key"
+        android:title="@string/settings_number_of_articles_label"
+        android:defaultValue="@string/settings_number_of_articles_default"
+        android:summary="%s" />
+
+</androidx.preference.PreferenceScreen>
