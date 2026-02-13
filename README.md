@@ -4,8 +4,6 @@
 [![API](https://img.shields.io/badge/API-28%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=28)
 [![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/sandesha21/newstoday-android.svg?style=social&label=Star)](https://github.com/sandesha21/newstoday-android)
-[![GitHub forks](https://img.shields.io/github/forks/sandesha21/newstoday-android.svg?style=social&label=Fork)](https://github.com/sandesha21/newstoday-android/fork)
 
 A clean, modern Android news app for browsing and bookmarking local news articles with customizable categories and offline reading support.
 
@@ -37,7 +35,13 @@ A clean, modern Android news app for browsing and bookmarking local news article
 
 ## Screenshots 📱
 
-*TBD*
+<div align="center">
+  <img src="screenshots/no-connection.png" width="250" alt="No Connection Screen"/>
+  <img src="screenshots/bookmarks_empty.png" width="250" alt="Empty Bookmarks Screen"/>
+  <img src="screenshots/Settings.png" width="250" alt="Settings Screen"/>
+</div>
+
+> **Screenshots showcase**: No internet connection handling, empty bookmarks state, and settings configuration.
 
 ---
 
@@ -109,16 +113,22 @@ A clean, modern Android news app for browsing and bookmarking local news article
 ## Project Structure 📁
 
 ```
-app/src/main/java/com/sandesh/android/newstoday/
-├── Article.java              # Article data model
-├── ArticleAdapter.java       # RecyclerView adapter for articles
-├── ArticleLoader.java        # AsyncTaskLoader for fetching articles
-├── Bookmarks.java           # Bookmark data model
-├── BookmarksActivity.java   # Activity for displaying bookmarked articles
-├── NewsActivity.java        # Main activity
-├── QueryUtils.java          # HTTP request utilities
-├── SettingsActivity.java    # Settings configuration activity
-└── Utils.java              # General utility functions
+NewsToday-Android-App/
+├── app/src/main/java/com/sandesh/android/newstoday/
+│   ├── Article.java              # Article data model
+│   ├── ArticleAdapter.java       # RecyclerView adapter for articles
+│   ├── ArticleLoader.java        # AsyncTaskLoader for fetching articles
+│   ├── Bookmarks.java           # Bookmark data model
+│   ├── BookmarksActivity.java   # Activity for displaying bookmarked articles
+│   ├── NewsActivity.java        # Main activity
+│   ├── QueryUtils.java          # HTTP request utilities
+│   ├── SettingsActivity.java    # Settings configuration activity
+│   └── Utils.java              # General utility functions
+├── app/src/main/res/            # App resources (layouts, drawables, strings)
+├── screenshots/                 # App screenshots for documentation
+├── README.md                    # Project documentation
+├── PROJECT_DESCRIPTION.md       # Detailed project description
+└── LICENSE                      # MIT License
 ```
 
 ---
