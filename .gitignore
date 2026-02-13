@@ -12,3 +12,66 @@
 /captures
 .externalNativeBuild
 .cxx
+
+# Additional Android Studio files
+/.idea/deploymentTargetDropDown.xml
+/.idea/render.experimental.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+/.idea/copyright/
+/.idea/encodings.xml
+/.idea/scopes/
+/.idea/dictionaries/
+/.idea/shelf/
+/.idea/inspectionProfiles/
+
+# Gradle files
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Local configuration files (API keys, signing configs, etc.)
+local.properties
+keystore.properties
+google-services.json
+firebase.json
+
+# Build outputs
+build/
+*/build/
+out/
+
+# Log files
+*.log
+
+# Android Profiling
+*.hprof
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# API Keys and sensitive data
+api_keys.properties
+secrets.properties
