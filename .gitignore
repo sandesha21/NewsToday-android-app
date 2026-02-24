@@ -14,6 +14,8 @@
 .cxx
 
 # Additional Android Studio files
+/.idea/.name
+/.idea/vcs.xml
 /.idea/deploymentTargetDropDown.xml
 /.idea/render.experimental.xml
 /.idea/misc.xml
@@ -33,6 +35,7 @@ gradle-app.setting
 
 # Local configuration files (API keys, signing configs, etc.)
 local.properties
+gradle.properties
 keystore.properties
 google-services.json
 firebase.json

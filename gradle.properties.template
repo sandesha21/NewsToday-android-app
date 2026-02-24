@@ -1,0 +1,33 @@
+# Gradle Properties Template
+# Copy this file to gradle.properties and fill in your API keys
+# DO NOT commit gradle.properties to version control
+
+# The Guardian API Key Parts
+# Get your API key from: https://open-platform.theguardian.com/access/
+# Split your API key (format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) into 5 parts:
+# guard_a = part after first dash
+# guard_b = first part before first dash
+# guard_c = part after third dash
+# guard_d = part after second dash
+# guard_e = last part after fourth dash
+
+# Example: If your key is a8143585-aa4c-4814-8de5-5c6490f1a676
+# guard_a=aa4c
+# guard_b=a8143585
+# guard_c=8de5
+# guard_d=4814
+# guard_e=5c6490f1a676
+
+guard_a=YOUR_API_KEY_PART_1
+guard_b=YOUR_API_KEY_PART_2
+guard_c=YOUR_API_KEY_PART_3
+guard_d=YOUR_API_KEY_PART_4
+guard_e=YOUR_API_KEY_PART_5
+
+# Android X and Jetifier settings
+android.useAndroidX=true
+android.enableJetifier=true
+android.suppressUnsupportedCompileSdk=36
+
+# JVM arguments for Gradle daemon
+org.gradle.jvmargs=-Xmx1536m
