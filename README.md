@@ -84,14 +84,14 @@ A clean, modern Android news app for browsing and bookmarking local news article
 
 2. Open the project in Android Studio
 
-3. Create a `gradle.properties` file in the root directory and add your API keys:
-   ```properties
-   guard_a=your_api_key_part_1
-   guard_b=your_api_key_part_2
-   guard_c=your_api_key_part_3
-   guard_d=your_api_key_part_4
-   guard_e=your_api_key_part_5
-   ```
+3. **Configure API Key** (Required):
+   - Get a free API key from [The Guardian Open Platform](https://open-platform.theguardian.com/access/)
+   - Copy `gradle.properties.template` to `gradle.properties`:
+     ```bash
+     cp gradle.properties.template gradle.properties
+     ```
+   - Edit `gradle.properties` and replace the placeholder values with your API key parts
+   - **Important**: Never commit `gradle.properties` to version control (it's in .gitignore)
 
 4. Sync the project with Gradle files
 
