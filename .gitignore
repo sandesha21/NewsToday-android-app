@@ -27,6 +27,9 @@
 /.idea/shelf/
 /.idea/inspectionProfiles/
 
+# VS Code settings
+.vscode/settings.json
+
 # Gradle files
 .gradle/
 gradle-app.setting
