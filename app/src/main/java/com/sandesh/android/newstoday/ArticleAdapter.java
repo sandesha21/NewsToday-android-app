@@ -19,7 +19,7 @@ import java.util.ArrayList;
  */
 public class ArticleAdapter extends ArrayAdapter<Article> {
 
-    private Bookmarks mBookmarks;
+    private final Bookmarks mBookmarks;
 
     /**
      * ArticleAdapter constructor. Accepts 3 parameters.
