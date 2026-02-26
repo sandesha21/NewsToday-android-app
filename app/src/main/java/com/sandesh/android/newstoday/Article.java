@@ -8,12 +8,12 @@ import android.graphics.Bitmap;
  */
 public class Article {
 
-    private String mArticleTitle;
-    private String mArticleUrl;
-    private Bitmap mArticleThumbnail;
-    private String mArticlePublishedDate;
-    private String mArticleAuthor;
-    private String mArticleType;
+    private final String mArticleTitle;
+    private final String mArticleUrl;
+    private final Bitmap mArticleThumbnail;
+    private final String mArticlePublishedDate;
+    private final String mArticleAuthor;
+    private final String mArticleType;
 
     /**
      * The Article object constructor.
