@@ -23,6 +23,13 @@ public class BookmarksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookmarks);
 
+        // Setup toolbar as ActionBar
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         Bookmarks bookmarks = Bookmarks.getInstance();
         ArrayList<Article> articles = bookmarks.getBookmarks();
 
