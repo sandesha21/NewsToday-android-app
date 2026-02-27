@@ -13,10 +13,10 @@ public class Bookmarks {
     private static final String LOG_TAG = Bookmarks.class.getSimpleName();
 
     // Initializing the class instance.
-    private static Bookmarks INSTANCE = new Bookmarks();
+    private static final Bookmarks INSTANCE = new Bookmarks();
 
     // The global Bookmarks list tot stores bookmarked articles.
-    private ArrayList<Article> mBookmarks = new ArrayList<>();
+    private final ArrayList<Article> mBookmarks = new ArrayList<>();
 
     // The stored Adapter
     private ArticleAdapter mAdapter;
@@ -84,11 +84,7 @@ public class Bookmarks {
     public void toggleBookmarkButton(ImageButton button, Article article) {
 
         // Set the button.
-        if (isBookmark(article)) {
-            button.setActivated(true);
-        } else {
-            button.setActivated(false);
-        }
+        button.setActivated(isBookmark(article));
 
         // Attach the OnClickListener to the bookmark button of a news article.
         button.setOnClickListener(view -> {
