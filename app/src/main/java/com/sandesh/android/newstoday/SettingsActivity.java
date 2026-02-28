@@ -63,12 +63,10 @@ public class SettingsActivity extends AppCompatActivity {
             }
 
             // Set initial summaries
-            if (selectedArticleType instanceof ListPreference) {
-                ListPreference lp = (ListPreference) selectedArticleType;
+            if (selectedArticleType instanceof ListPreference lp) {
                 lp.setSummary(lp.getEntry());
             }
-            if (pageSize instanceof EditTextPreference) {
-                EditTextPreference et = (EditTextPreference) pageSize;
+            if (pageSize instanceof EditTextPreference et) {
                 et.setSummary(et.getText());
             }
         }
@@ -78,8 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
             String key = preference.getKey();
             String stringValue = String.valueOf(newValue);
 
-            if (preference instanceof ListPreference) {
-                ListPreference lp = (ListPreference) preference;
+            if (preference instanceof ListPreference lp) {
                 int index = lp.findIndexOfValue(stringValue);
                 if (index >= 0) {
                     preference.setSummary(lp.getEntries()[index]);
