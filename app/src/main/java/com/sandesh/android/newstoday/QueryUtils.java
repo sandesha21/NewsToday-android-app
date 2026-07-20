@@ -197,7 +197,11 @@ public final class QueryUtils {
         Bitmap bitmap = null;
         try {
             InputStream inputStream = new URL(imgUrl).openStream();
-            bitmap = BitmapFactory.decodeStream(inputStream);
+            try {
+                bitmap = BitmapFactory.decodeStream(inputStream);
+            } finally {
+                inputStream.close();
+            }
         } catch (MalformedURLException e) {
             Log.e(LOG_TAG, "Error with the provided URL.", e);
         } catch (IOException e) {
