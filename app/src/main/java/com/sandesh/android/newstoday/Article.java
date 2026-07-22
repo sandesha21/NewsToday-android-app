@@ -72,7 +72,7 @@ public class Article {
         return "Article {" +
                 "mArticleTitle='" + mArticleTitle + "', " +
                 "mArticleUrl='" + mArticleUrl + "', " +
-                "mArticleThumbnail='" + mArticleThumbnail.toString() + "', " +
+                "mArticleThumbnail='" + (mArticleThumbnail != null ? mArticleThumbnail.toString() : "null") + "', " +
                 "mArticlePublishedDate='" + mArticlePublishedDate + "' " +
                 "mArticleAuthor='" + mArticleAuthor + "' " +
                 "mArticleType='" + mArticleType + "' " +
