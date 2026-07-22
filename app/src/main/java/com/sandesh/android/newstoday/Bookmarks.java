@@ -55,8 +55,9 @@ public class Bookmarks {
     private void removeArticleFromBookmarks(Article article) {
         for (int i = 0; i < mBookmarks.size(); i++) {
             Article currentArticle = mBookmarks.get(i);
-            if (currentArticle.getArticleTitle().equals(article.getArticleTitle())) {
+            if (currentArticle != null && currentArticle.getArticleTitle().equals(article.getArticleTitle())) {
                 mBookmarks.remove(i);
+                return;
             }
         }
     }
@@ -67,14 +68,13 @@ public class Bookmarks {
      * @return Returns logic, checking presence of the new article.
      */
     private boolean isBookmark(Article article) {
-        boolean bookmarkState = false;
         for (int i = 0; i < mBookmarks.size(); i++) {
             Article currentArticle = mBookmarks.get(i);
-            if (currentArticle.getArticleTitle().equals(article.getArticleTitle())) {
-                bookmarkState = true;
+            if (currentArticle != null && currentArticle.getArticleTitle().equals(article.getArticleTitle())) {
+                return true;
             }
         }
-        return bookmarkState;
+        return false;
     }
 
     /**
