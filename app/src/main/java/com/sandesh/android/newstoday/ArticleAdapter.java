@@ -69,6 +69,11 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
         // Fetching current News object from the ArrayList.
         Article currentArticle = getItem(position);
 
+        // Null check for safety
+        if (currentArticle == null) {
+            return convertView;
+        }
+
         // Set the article type and the title
         viewHolder.articleTypeTextView.setText(currentArticle.getArticleType());
         viewHolder.newsHeadlineTextView.setText(Utils.capitalize(currentArticle.getArticleTitle()));
