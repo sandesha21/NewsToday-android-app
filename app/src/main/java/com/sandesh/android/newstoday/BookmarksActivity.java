@@ -55,7 +55,9 @@ public class BookmarksActivity extends AppCompatActivity {
         // onClick intent to open news articles.
         bookmarksList.setOnItemClickListener((adapterView, view, i, l) -> {
             Article currentArticle = adapter.getItem(i);
-            Utils.openWebsite(BookmarksActivity.this, currentArticle.getArticleUrl());
+            if (currentArticle != null) {
+                Utils.openWebsite(BookmarksActivity.this, currentArticle.getArticleUrl());
+            }
         });
 
     }
